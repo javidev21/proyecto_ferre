@@ -23,11 +23,11 @@ public class Conexion {
         Connection conn = null;
         try {
             conn = DriverManager.getConnection(URL, USER, PASSWORD);
-            JOptionPane.showMessageDialog(null, "Conexion exitosa");
+           // JOptionPane.showMessageDialog(null, "Conexion exitosa");
             System.out.println("Conexión exitosa a la base de datos.");
         } catch (SQLException e) {
             System.out.println("Error al conectar a la base de datos");
-            JOptionPane.showMessageDialog(null, "Conexion fallida");
+            //JOptionPane.showMessageDialog(null, "Conexion fallida");
 
         }
         return conn;

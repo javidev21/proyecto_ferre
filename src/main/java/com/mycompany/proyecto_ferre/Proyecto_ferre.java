@@ -12,7 +12,10 @@ import java.sql.Connection;
 public class Proyecto_ferre {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        
+        Frm_inventarios frminv = new Frm_inventarios();
+        frminv.setVisible(true);
+        frminv.setLocationRelativeTo(null);
         Connection con = Conexion.conectar();
         
         if (con != null) {
